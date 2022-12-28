@@ -11,7 +11,7 @@
 # Indice
 - [Sobre](#-sobre)
 - [Tecnologia utilizada](#-tecnologia-utilizada)
-- [Como baixar e instalar o projeto](#-como-baixar-e-instalar-o-projeto)
+- [Como baixar](#-como-baixar)
 ___
 ## 📜 Sobre
 O projeto **biblioteca de jogos** foi criado em 2019 com intuito de aprender a utilizar o library **flask** com python
@@ -23,7 +23,7 @@ ___
 - [Flask Mysqldb](https://pypi.org/project/Flask-MySQLdb/)
 - [Mysql](https://dev.mysql.com/downloads/file/?id=514518)
 ___
-## 🗃️ Como baixar e instalar o projeto
+## 🗃️ Como baixar
 
 ```bash
     # Clonar repositório
