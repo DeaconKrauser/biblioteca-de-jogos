@@ -11,7 +11,7 @@
 # Indice
 - [Sobre](#-sobre)
 - [Tecnologia utilizada](#-tecnologia-utilizada)
-- [Como baixar](#-como-baixar)
+- [Como baixar o projeto](#-como-baixar)
 ___
 ## 📜 Sobre
 O projeto **biblioteca de jogos** foi criado em 2019 com intuito de aprender a utilizar o library **flask** com python
