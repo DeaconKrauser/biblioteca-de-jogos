@@ -1,0 +1,27 @@
+{% extends "template.html" %}
+{% block conteudo %}
+
+<a class="btn btn-primary" href="{{ url_for('novo') }}" style="margin-bottom: 10px; margin-top: 50px;">Novo Jogo</a>
+<table class="table table-bordered">
+  <thead class="thead-dark">
+    <tr>
+      <th scope="col">Nome</th>
+      <th scope="col">Categoria</th>
+      <th scope="col">Console</th>
+      <th scope="col"></th>
+      <th scope="col"></th>
+    </tr>
+  </thead>
+    <tbody>
+{% for jogo in jogos %}        
+        <tr>
+            <td>{{ jogo.nome }}</td>
+            <td>{{ jogo.categoria }}</td>
+            <td>{{ jogo.console }}</td>
+            <td><a href="{{ url_for('editar', id=jogo.id) }}">Editar</a></td>
+            <td><a href="{{ url_for('deletar', id=jogo.id) }}">Excluir</a></td>
+        </tr>
+{% endfor %}
+    </tbody>
+</table>
+{% endblock %}

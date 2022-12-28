@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Jogoteca</title>
+        <link rel="stylesheet" href="{{ url_for('static', filename='bootstrap.css') }}">
+        <link rel="stylesheet" href="{{ url_for('static', filename='./envio.css') }}">
+        <link rel="stylesheet" href="{{ url_for('static', filename='./style.css') }}">
+    </head>
+    <body>
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+            <a class="navbar-brand">Sistema de estoque</a>
+            <div class="ml-auto">
+                <a href="{{ url_for('logout') }}" class="btn btn-outline-light">Sair</a>
+            </div>
+        </nav>
+        <div class="container">
+            <col-md-12>
+            {% with messages = get_flashed_messages() %}
+            {% if messages %}
+            <ul id="messages" class="list-unstyled">
+                {% for message in messages %}
+                <li class="alert alert-success">{{ message }}</li>
+                {% endfor %}
+            </ul>
+            {% endif %}
+            {% endwith %}
+            <div class="page-header">
+                <h1 style="margin-top: 30px; margin-bottom: 20px;">{{ titulo }}</h1>
+            </div>
+        </col-md-12>
+        {% block conteudo %}{% endblock %}
+
+        <script type="text/javascript" src="{{ url_for('static', filename='jquery.js') }}"></script>
+        <script type="text/javascript" src="{{ url_for('static', filename='app.js') }}"></script>
+</div>
+    </body>
+</html>
